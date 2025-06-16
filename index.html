@@ -1,0 +1,104 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script src="https://kit.fontawesome.com/a14ae32021.js" crossorigin="anonymous"></script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Cho tình yêu bé nhỏ của anh</title>
+
+<style type="text/css">
+@font-face {
+	font-family: digit;
+	src: url('digital-7_mono.ttf') format("truetype");
+}
+</style>
+<link href="css/default.css" type="text/css" rel="stylesheet">
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/garden.js"></script>
+<script type="text/javascript" src="js/functions.js"></script>
+
+</head>
+
+<body>
+
+<div id="mainDiv">
+	<div id="content">
+		<div id="code">
+			<span class="comments">/**</span><br />
+			<span class="space"/><span class="comments">Bài Code Dành Cho Từ Tiểu Thiêng</span><br />
+			<span class="space"/><span class="comments">Tình Yêu Của Đời Anh</span><br />
+			Kính thưa cô gái bé bổng của anh !<br />
+			Em có biết con tim anh đã rung lên một nhịp khi gặp em khi nào không?<br />
+			<span class="comments">Đó là ngày ấy,ngày định mệnh khi anh thấy em trong chiếc váy áo dài ngày khai giảng </span><br />
+			Kể từ lúc đó con tim anh đã nguyện trao hiến hết cho em mất rồi<br />
+			<span class="comments">Giọng nói, Ánh mắt, Nụ cười và Dáng vẻ hồn nhiên ấy</span><br />
+			Phần nào đó dường như đã khắc sâu vào trong tâm trí anh<br />
+			Anh đã yêu, đã hiểu em trong thời gian qua<br />
+			Cảm ơn chúa vì đã ban cho anh một tình yêu nhỏ bé nhưng to lớn hơn bất cứ thứ gì với anh<br />
+			Anh chỉ muốn bản thân anh và em có thể phát triển đi thật xa, thật cao<br />
+			Chúng ta sẽ dắt tay nhau qua bao nhiêu cơn bão tố và cùng nhau đón ánh bình minh.<br />
+			Có lẽ nếu không cần vượt bất cứ chướng ngại cao xa nào, chỉ cần anh có thể trở thành một ngôi nhà cho em thuộc về.<br />
+			<span class="comments">Cảm ơn em</span><br />
+			Cảm ơn em vì đã yêu anh, thương anh và góp ý anh<br />
+			<br>
+			<br>
+			Cảm ơn mẹ em vì đã mang thế giới đến cho anh<br />
+			Cảm ơn Út em vì đã cho thế giới của anh những màu sắc rực rỡ<br />
+			<br>
+			<br>
+			Và anh xin cảm ơn bản thân vì đã thật sự thương đúng người<br />
+			<br>
+			<span id="heartspan">
+			<a href="image.jpg"><i class="fas fa-heart" id="icon"></i></a>
+			</span>
+		</div>
+		<div id="loveHeart">
+			<canvas id="garden"></canvas>
+			<div id="words">
+				<div id="messages">
+					YÊU EM MÃI MÃI
+					<div id="elapseClock"></div>
+				</div>
+				<div id="loveu">
+					ANH THẬT SỰ RẤT RẤT YÊU EM <br/>
+					<div class="signature">@phanhoaian</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript">
+var offsetX = $("#loveHeart").width() / 2;
+var offsetY = $("#loveHeart").height() / 2 - 55;
+var together = new Date();
+together.setFullYear(2016, 8, 5);
+together.setHours(16);
+together.setMinutes(30);
+together.setSeconds(0);
+together.setMilliseconds(0);
+
+if (!document.createElement('canvas').getContext) {
+	var msg = document.createElement("div");
+	msg.id = "errorMsg";
+	msg.innerHTML = "Your browser doesn't support HTML5!<br/>Recommend use Chrome 14+/IE 9+/Firefox 7+/Safari 4+"; 
+	document.body.appendChild(msg);
+	$("#code").css("display", "none")
+	$("#copyright").css("position", "absolute");
+	$("#copyright").css("bottom", "10px");
+	document.execCommand("stop");
+} else {
+	setTimeout(function () {
+		startHeartAnimation();
+	}, 5000);
+
+	timeElapse(together);
+	setInterval(function () {
+		timeElapse(together);
+	}, 500);
+
+	adjustCodePosition();
+	$("#code").typewriter();
+}
+</script>
+</body>
+</html>
